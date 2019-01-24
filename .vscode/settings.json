@@ -1,4 +1,10 @@
 {
-    "git.ignoreLimitWarning": true,
-    "javascript.implicitProjectConfig.experimentalDecorators": true
+  "git.ignoreLimitWarning": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/*.css": { "when": "$(basename).scss" }
+  }
 }

@@ -13,24 +13,23 @@ import 'nvd3/build/nv.d3.css'
 class Index extends React.Component {
   render() {
     return (
-			<Router>
-				<Provider stores={stores}>
-					<App />
-				</Provider>
-			</Router>
+      <Router>
+        <Provider stores={stores}>
+          <App />
+        </Provider>
+      </Router>
     )
   }
 }
 
-ReactDOM.render(<Index />, document.getElementById("app"));
+ReactDOM.render(<Index />, document.getElementById('app'))
 
 // Hot Module Replacement
 if (module.hot) {
-  module.hot.accept(function () {
-    window.location.reload();
-  });
-	module.hot.dispose(function() {
+  module.hot.accept(function() {
+    window.location.reload()
+  })
+  module.hot.dispose(function() {
     // module is about to be replaced
-  });
+  })
 }
-
