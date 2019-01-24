@@ -1,15 +1,28 @@
+@import '../../style/colors.scss';
+
 .dashboard {
-	.logo {
-		width: 100px;
-		margin: 16px 10px 16px 0;
-		float: left;
-	}
-	
-	.dashboard-container {
-		background: #fff; 
-		padding: 10px;
-		padding-top: 0;
-		height: 760px;
-		
-	}
+  background-color: $appBlue1;
+
+  .dashboard__header {
+    background-color: $appWhite;
+    border-bottom: 1px solid $appWhite1;
+
+    .dashboard__header__logo {
+      width: 100px;
+      margin: 22px 10px 22px 0;
+      float: left;
+    }
+  }
+
+  .dashboard__content {
+    padding: '0 50px';
+    background-color: $appBlue1;
+
+    .dashboard__content__container {
+      background: none;
+      padding: 10px;
+      padding-top: 0;
+      height: 760px;
+    }
+  }
 }

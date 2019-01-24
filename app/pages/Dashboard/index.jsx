@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
 import './style.scss'
-import logo from '../../assets/shopify-logo.png'
+import logo from '../../assets/logo.png'
 import { observer } from 'mobx-react'
 
 const { Header, Content } = Layout
@@ -18,11 +18,11 @@ class Dashboard extends React.Component {
   render() {
     return (
       <Layout className="layout dashboard">
-        <Header>
-          <img className="logo" src={logo} alt="" />
+        <Header className="dashboard__header">
+          <img className="dashboard__header__logo" src={logo} alt="magzeen" />
         </Header>
-        <Content style={{ padding: '0 50px' }}>
-          <div className="dashboard-container" />
+        <Content className="dashboard__content">
+          <div className="dashboard__content__container" />
         </Content>
       </Layout>
     )
