@@ -38,7 +38,10 @@ class Dashboard extends React.Component {
             <Sider className="dashboard__content__container__sider" width={200}>
               <MainMenu />
             </Sider>
-            <Content className="dashboard__content__container__main" style={{ minHeight: this.state.windowHeight - 74, backgroundColor: "transparent" }}>
+            <Content
+              className="dashboard__content__container__main"
+              style={{ minHeight: this.state.windowHeight - 74, backgroundColor: 'transparent' }}
+            >
               <PageHeader />
               <Feed />
             </Content>

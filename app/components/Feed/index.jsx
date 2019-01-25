@@ -10,7 +10,7 @@ class Feed extends React.Component {
   render() {
     return (
       <div>
-        <FeedItem></FeedItem>
+        <FeedItem />
       </div>
     )
   }
