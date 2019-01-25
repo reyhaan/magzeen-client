@@ -4,6 +4,8 @@ import './style.scss'
 import logo from '../../assets/logo.png'
 import { observer } from 'mobx-react'
 import MainMenu from '../../components/MainMenu'
+import PageHeader from '../../components/PageHeader'
+import Feed from '../../components/Feed'
 
 const { SubMenu } = Menu
 const { Header, Content, Footer, Sider } = Layout
@@ -34,9 +36,12 @@ class Dashboard extends React.Component {
         <Content className="dashboard__content">
           <Layout className="dashboard__content__container">
             <Sider className="dashboard__content__container__sider" width={200}>
-              <MainMenu style={{ marginTop: 35 }} />
+              <MainMenu style={{ marginTop: 25 }} />
             </Sider>
-            <Content style={{ minHeight: this.state.windowHeight - 74 }} />
+            <Content style={{ minHeight: this.state.windowHeight - 74, background: '#eee' }}>
+              <PageHeader />
+              <Feed />
+            </Content>
           </Layout>
         </Content>
       </Layout>
