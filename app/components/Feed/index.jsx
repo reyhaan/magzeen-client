@@ -1,4 +1,5 @@
 import React from 'react'
+import FeedItem from '../../components/FeedItem'
 import './style.scss'
 
 class Feed extends React.Component {
@@ -7,7 +8,11 @@ class Feed extends React.Component {
   }
 
   render() {
-    return <div>Feed</div>
+    return (
+      <div>
+        <FeedItem></FeedItem>
+      </div>
+    )
   }
 }
 
