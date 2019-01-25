@@ -34,7 +34,7 @@ class Dashboard extends React.Component {
         <Content className="dashboard__content">
           <Layout className="dashboard__content__container">
             <Sider className="dashboard__content__container__sider" width={200}>
-              <MainMenu />
+              <MainMenu style={{ marginTop: 35 }} />
             </Sider>
             <Content style={{ minHeight: this.state.windowHeight - 74 }} />
           </Layout>

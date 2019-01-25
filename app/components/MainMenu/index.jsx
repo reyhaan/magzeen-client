@@ -13,12 +13,20 @@ class MainMenu extends React.Component {
         mode="inline"
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
-        style={{ height: '100%' }}
+        style={{ ...this.props.style }}
       >
-        <Menu.Item key="5">option5</Menu.Item>
-        <Menu.Item key="6">option6</Menu.Item>
-        <Menu.Item key="7">option7</Menu.Item>
-        <Menu.Item key="8">option8</Menu.Item>
+        <Menu.Item key="5">
+          <span>option 1</span>
+        </Menu.Item>
+        <Menu.Item key="6">
+          <span>option 2</span>
+        </Menu.Item>
+        <Menu.Item key="7">
+          <span>option 3</span>
+        </Menu.Item>
+        <Menu.Item key="8">
+          <span>option 4</span>
+        </Menu.Item>
       </Menu>
     )
   }

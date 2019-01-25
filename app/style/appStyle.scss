@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'avenir-regular';
+  src: url('../assets/fonts/avenir/AvenirLTStd-Roman.woff');
+}
+
+@font-face {
+  font-family: 'avenir-medium';
+  src: url('../assets/fonts/avenir/AvenirLTStd-Medium.woff');
+}
+
+@font-face {
+  font-family: 'avenir-heavy';
+  src: url('../assets/fonts/avenir/AvenirLTStd-Heavy.woff');
+}
+
+@font-face {
+  font-family: 'avenir-black';
+  src: url('../assets/fonts/avenir/AvenirLTStd-Black.woff');
+}
+
+@font-face {
+  font-family: 'avenir-light';
+  src: url('../assets/fonts/avenir/AvenirLTStd-Light.woff');
+}
+
+* {
+  font-family: 'avenir-regular', Times, serif;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: color 0 ease-in !important;
+  transition: none !important;
+}
+
+*:after {
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: color 0 ease-in !important;
+  transition: none !important;
+}
