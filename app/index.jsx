@@ -8,7 +8,7 @@ import { stores } from './stores'
 // add all required css libraries here at the root
 import 'antd/dist/antd.css'
 import './style/override.scss'
-import './style/appStyle.scss'
+import './style/app.scss'
 import 'nvd3/build/nv.d3.css'
 
 import 'normalize.css/normalize.css'
