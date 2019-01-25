@@ -10,6 +10,10 @@ import 'antd/dist/antd.css'
 import './style/override.scss'
 import 'nvd3/build/nv.d3.css'
 
+import 'normalize.css/normalize.css'
+import '@blueprintjs/icons/lib/css/blueprint-icons.css'
+import '@blueprintjs/core/lib/css/blueprint.css'
+
 class Index extends React.Component {
   render() {
     return (

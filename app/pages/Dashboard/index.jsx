@@ -1,28 +1,43 @@
 import React from 'react'
-import { Layout } from 'antd'
+import { Layout, Menu, Breadcrumb, Icon } from 'antd'
 import './style.scss'
 import logo from '../../assets/logo.png'
 import { observer } from 'mobx-react'
+import MainMenu from '../../components/MainMenu'
 
-const { Header, Content } = Layout
+const { SubMenu } = Menu
+const { Header, Content, Footer, Sider } = Layout
 
 @observer
 class Dashboard extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      windowHeight: window.innerHeight,
+    }
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({
+        windowHeight: window.innerHeight,
+      })
+    })
+  }
 
   render() {
     return (
-      <Layout className="layout dashboard">
+      <Layout className="dashboard">
         <Header className="dashboard__header">
           <img className="dashboard__header__logo" src={logo} alt="magzeen" />
         </Header>
         <Content className="dashboard__content">
-          <div className="dashboard__content__container" />
+          <Layout className="dashboard__content__container">
+            <Sider className="dashboard__content__container__sider" width={200}>
+              <MainMenu />
+            </Sider>
+            <Content style={{ minHeight: this.state.windowHeight - 74 }} />
+          </Layout>
         </Content>
       </Layout>
     )
