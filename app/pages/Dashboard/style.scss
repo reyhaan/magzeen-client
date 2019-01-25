@@ -20,10 +20,14 @@
     .dashboard__content__container {
       background: none;
       padding: 10px;
-      padding-top: 0;
+      padding-top: 25px;
 
       .dashboard__content__container__sider {
         background: none;
+      }
+
+      .dashboard__content__container__main {
+        padding-left: 25px;
       }
     }
   }

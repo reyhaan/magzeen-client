@@ -1,0 +1,13 @@
+.page-header {
+	margin-bottom: 25px;
+	.page-header--left {
+		&__heading {
+			color: #555555;
+			font-size: 26px;
+			font-family: 'avenir-heavy'
+		}
+	}
+	.page-header--right {
+		text-align: right;
+	}
+}

@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import './ant-overrides/ant-menu.scss';
+@import './ant-overrides/ant-button.scss';
 
 .ant-pagination {
   .ant-pagination-item {
@@ -18,19 +19,6 @@
     justify-content: center;
     align-items: center;
   }
-}
-
-.ant-btn {
-  background-color: $appBlue;
-  border-color: $appBlue;
-  border-radius: 3px;
-}
-
-.ant-btn:hover,
-.ant-btn:focus {
-  color: $appWhite;
-  background-color: $appBlue;
-  border-color: $appBlue;
 }
 
 // ant-tabs-bar override

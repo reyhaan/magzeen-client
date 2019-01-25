@@ -1,4 +1,5 @@
 import React from 'react'
+import { Row, Col, Button } from 'antd'
 import './style.scss'
 
 class PageHeader extends React.Component {
@@ -7,7 +8,18 @@ class PageHeader extends React.Component {
   }
 
   render() {
-    return <div>Header</div>
+    return (
+      <div className="page-header">
+        <Row>
+          <Col span={18} className="page-header--left">
+            <h2 className="page-header--left__heading">All Posts</h2>
+          </Col>
+          <Col span={6} className="page-header--right">
+            <Button icon="plus">New</Button>
+          </Col>
+        </Row>
+      </div>
+    )
   }
 }
 

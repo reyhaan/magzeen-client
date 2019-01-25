@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import '../colors.scss';
 
 // ant-menu override
 
@@ -44,7 +44,7 @@ li.ant-menu-item {
 li.ant-menu-item-selected {
   span {
     color: $appPrimary;
-    font-family: 'avenir-black' !important;
+    font-family: 'avenir-heavy' !important;
 
     &:hover {
       color: $appPrimary;

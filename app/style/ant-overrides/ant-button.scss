@@ -1,0 +1,16 @@
+@import '../colors.scss';
+
+.ant-btn {
+	background-color: $appPrimary;
+	border-color: $appPrimary;
+	border-radius: 3px;
+	color: $appWhite;
+}
+  
+.ant-btn:hover,
+.ant-btn:focus {
+	color: $appWhite;
+	background-color: $appPrimary;
+	border-color: $appPrimary;
+	opacity: 0.95;
+}
