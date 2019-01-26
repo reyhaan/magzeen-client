@@ -3,17 +3,6 @@
 .dashboard {
   background-color: $appBlue1;
 
-  .dashboard__header {
-    background-color: $appWhite;
-    border-bottom: 1px solid $appWhite1;
-
-    .dashboard__header__logo {
-      width: 90px;
-      margin: 24px 10px 23px 0;
-      float: left;
-    }
-  }
-
   .dashboard__content {
     background-color: $appBlue1;
 
@@ -27,7 +16,7 @@
       }
 
       .dashboard__content__container__main {
-        padding-left: 25px;
+        padding-left: 40px;
       }
     }
   }
@@ -42,8 +31,8 @@
   .dashboard {
     .dashboard__content {
       background: none;
-      width: 970px;
-      margin: 0 auto;
+      // width: 970px;
+      // margin: 0 auto;
     }
   }
 }

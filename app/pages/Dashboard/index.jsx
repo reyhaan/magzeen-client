@@ -1,14 +1,14 @@
 import React from 'react'
 import { Layout, Menu, Breadcrumb, Icon } from 'antd'
 import './style.scss'
-import logo from '../../assets/logo.png'
 import { observer } from 'mobx-react'
 import MainMenu from '../../components/MainMenu'
 import PageHeader from '../../components/PageHeader'
 import Feed from '../../components/Feed'
+import GlobalHeader from '../../components/GlobalHeader'
 
 const { SubMenu } = Menu
-const { Header, Content, Footer, Sider } = Layout
+const { Header, Content, Sider } = Layout
 
 @observer
 class Dashboard extends React.Component {
@@ -30,9 +30,7 @@ class Dashboard extends React.Component {
   render() {
     return (
       <Layout className="dashboard">
-        <Header className="dashboard__header">
-          <img className="dashboard__header__logo" src={logo} alt="magzeen" />
-        </Header>
+        <GlobalHeader />
         <Content className="dashboard__content">
           <Layout className="dashboard__content__container">
             <Sider className="dashboard__content__container__sider" width={200}>

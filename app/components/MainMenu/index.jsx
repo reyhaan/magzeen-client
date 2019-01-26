@@ -22,7 +22,7 @@ class MainMenu extends React.Component {
         </Menu.Item>
         <Menu.Item key="6">
           <span className="ant-menu-item__text">
-            <Icon name="cog" />
+            <Icon name="bolt" />
             &nbsp; Must See
           </span>
         </Menu.Item>
