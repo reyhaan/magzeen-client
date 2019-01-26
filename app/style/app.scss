@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 #app {
   height: 100%;
   width: 100%;
@@ -41,4 +43,41 @@
   -webkit-transition: none !important;
   -o-transition: color 0 ease-in !important;
   transition: none !important;
+}
+
+a {
+  color: $appPrimary;
+  text-decoration: none;
+}
+
+.space-left--5 {
+  margin-left: 5px;
+}
+
+.space-right--5 {
+  margin-right: 5px;
+}
+
+.space-left--10 {
+  margin-left: 10px;
+}
+
+.space-right--10 {
+  margin-right: 10px;
+}
+
+.space-left--15 {
+  margin-left: 15px;
+}
+
+.space-right--15 {
+  margin-right: 15px;
+}
+
+.space-left--20 {
+  margin-left: 20px;
+}
+
+.space-right--20 {
+  margin-right: 20px;
 }

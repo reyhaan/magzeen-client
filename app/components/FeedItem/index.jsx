@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'antd'
+import { Card, Row, Col } from 'antd'
 import './style.scss'
 
 class FeedItem extends React.Component {
@@ -11,9 +11,9 @@ class FeedItem extends React.Component {
     return (
       <div className="feed-item">
         <Card className="feed-item__card">
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
+          <Row>Header</Row>
+          <Row>body</Row>
+          <Row>footer</Row>
         </Card>
       </div>
     )

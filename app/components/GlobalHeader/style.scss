@@ -9,7 +9,7 @@
 
   .global-header__left__logo {
     width: 86px;
-    margin: 20px 10px 20px 0;
+    margin: 20px 10px 20px 10px;
     float: left;
   }
 
@@ -24,25 +24,6 @@
       &:hover {
         color: $grey4;
         cursor: pointer;
-      }
-    }
-
-    .global-header__right--avatar-btn {
-      background: none;
-      color: $grey5;
-      font-size: 18px;
-      border: none;
-      text-decoration: none;
-      float: right;
-      padding: 0 10px;
-      color: $grey7;
-
-      &:hover {
-        color: $grey4;
-      }
-
-      &::after {
-        border-color: none;
       }
     }
   }
