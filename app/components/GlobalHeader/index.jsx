@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Row, Col } from 'antd'
+import { Layout, Row, Col, Dropdown, Button, Menu } from 'antd'
 import { Icon } from 'react-fa'
 import logo from '../../assets/logo.png'
 import './style.scss'
@@ -11,6 +11,16 @@ class GlobalHeader extends React.Component {
     super(props)
   }
 
+  menu = () => {
+    return (
+      <Menu>
+        <Menu.Item key="1">Settings</Menu.Item>
+        <Menu.Item key="2">Signout</Menu.Item>
+        <Menu.Item key="3">3rd item</Menu.Item>
+      </Menu>
+    )
+  }
+
   render() {
     return (
       <Header className="global-header">
@@ -19,7 +29,14 @@ class GlobalHeader extends React.Component {
             <img className="global-header__left__logo" src={logo} alt="magzeen" />
           </Col>
           <Col span={8} offset={8} className="global-header__right">
-            <Icon name="bell" />
+            <Dropdown overlay={this.menu}>
+              <a className="global-header__right--profile-button" href="#">
+                <Icon name="user-circle" /> <Icon name="caret-down" />
+              </a>
+            </Dropdown>
+            <div className="global-header__right__notification-btn">
+              <Icon name="bell" />
+            </div>
           </Col>
         </Row>
       </Header>
