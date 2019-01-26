@@ -17,8 +17,8 @@ class PageHeader extends React.Component {
           </Col>
           <Col span={6} className="page-header--right">
             <Button>
-              <Icon name="plus" />
-              &nbsp; New
+              <Icon name="pencil" />
+              &nbsp; New Post
             </Button>
           </Col>
         </Row>

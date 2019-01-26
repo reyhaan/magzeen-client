@@ -1,5 +1,6 @@
 import React from 'react'
-import { Menu, Icon } from 'antd'
+import { Menu } from 'antd'
+import { Icon } from 'react-fa'
 import './style.scss'
 
 class MainMenu extends React.Component {
@@ -16,21 +17,19 @@ class MainMenu extends React.Component {
         style={{ ...this.props.style }}
       >
         <Menu.Item key="5">
-          <span>
-            <Icon type="file-text" theme="filled" />
-            All Posts
-          </span>
+          <Icon name="th-list" />
+          <span className="ant-menu-item__text">&nbsp; All Posts</span>
         </Menu.Item>
         <Menu.Item key="6">
-          <span>
-            <Icon type="notification" theme="filled" />
-            Must See
+          <span className="ant-menu-item__text">
+            <Icon name="cog" />
+            &nbsp; Must See
           </span>
         </Menu.Item>
         <Menu.Item key="7">
-          <span>
-            <Icon type="edit" theme="filled" />
-            Draft
+          <span className="ant-menu-item__text">
+            <Icon name="edit" />
+            &nbsp; Draft
           </span>
         </Menu.Item>
       </Menu>
