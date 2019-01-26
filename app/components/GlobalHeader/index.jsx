@@ -16,7 +16,6 @@ class GlobalHeader extends React.Component {
       <Menu>
         <Menu.Item key="1">Settings</Menu.Item>
         <Menu.Item key="2">Signout</Menu.Item>
-        <Menu.Item key="3">3rd item</Menu.Item>
       </Menu>
     )
   }
@@ -30,7 +29,7 @@ class GlobalHeader extends React.Component {
           </Col>
           <Col span={8} offset={8} className="global-header__right">
             <Dropdown overlay={this.menu}>
-              <a className="global-header__right--profile-button" href="#">
+              <a className="global-header__right--avatar-btn" href="#">
                 <Icon name="user-circle" /> <Icon name="caret-down" />
               </a>
             </Dropdown>

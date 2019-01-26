@@ -1,7 +1,10 @@
 .ant-card.feed-item {
   &__card {
-    width: 100%;
+    width: 430px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
   }
 }
