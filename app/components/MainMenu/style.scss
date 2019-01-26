@@ -1,0 +1,21 @@
+@import '../../style/colors.scss';
+
+.main-menu {
+  &__subheader {
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+    padding: 0 10px 0 50px;
+
+    p {
+      font-family: 'avenir-heavy';
+      display: block;
+      margin-bottom: 5px;
+      float: left;
+    }
+    &__button {
+      float: right;
+      color: $grey9;
+    }
+  }
+}
