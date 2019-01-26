@@ -9,14 +9,29 @@
     .dashboard__content__container {
       background: none;
       padding: 15px;
-      padding-top: 25px;
+      padding-top: 80px;
+      position: relative;
 
       .dashboard__content__container__sider {
         background: none;
+        position: fixed;
+        bottom: 0;
+        top: 80px;
       }
 
       .dashboard__content__container__main {
         padding-left: 40px;
+        width: 720px;
+        max-width: 720px;
+        position: relative;
+        float: right;
+      }
+
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+        white-space: nowrap;
       }
     }
   }

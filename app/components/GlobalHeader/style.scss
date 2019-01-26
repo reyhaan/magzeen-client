@@ -1,11 +1,14 @@
 @import '../../style/colors.scss';
 
 .ant-layout-header.global-header {
-  background-color: $appWhite;
+  background-color: #fff;
   height: 56px;
   line-height: 56px;
-  box-shadow: 0px 2px 5px $appWhite2;
+  box-shadow: 0px 2px 5px #dadada;
   padding: 0 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1026;
 
   .global-header__left__logo {
     width: 86px;
