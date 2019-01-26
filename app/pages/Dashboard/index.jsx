@@ -33,7 +33,7 @@ class Dashboard extends React.Component {
         <GlobalHeader />
         <Content className="dashboard__content group">
           <Layout className="dashboard__content__container group">
-            <Sider className="dashboard__content__container__sider group" width={200}>
+            <Sider className="dashboard__content__container__sider" width={200}>
               <MainMenu />
             </Sider>
             <Content
