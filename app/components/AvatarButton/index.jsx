@@ -39,25 +39,6 @@ class AvatarButton extends React.Component {
   }
 
   render() {
-    const data = [
-      {
-        title: 'My Profile',
-        icon: 'user',
-      },
-      {
-        title: 'Notifications',
-        icon: 'bell',
-      },
-      {
-        title: 'Ant Design Title 3',
-        icon: '',
-      },
-      {
-        title: 'Ant Design Title 4',
-        icon: '',
-      },
-    ]
-
     return (
       <div className="avatar-btn">
         <a className="avatar-btn__user-image" href="#" onClick={this.showMenu}>
