@@ -38,7 +38,6 @@ li.ant-menu-item {
   }
 
   .ant-menu-item__text {
-    font-family: 'avenir-roman' !important;
     font-size: 14px;
   }
 }
@@ -50,8 +49,5 @@ li.ant-menu-item-selected {
     &:hover {
       color: $appPrimary;
     }
-  }
-  .ant-menu-item__text {
-    font-family: 'avenir-heavy' !important;
   }
 }

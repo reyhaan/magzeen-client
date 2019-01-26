@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Row, Col, Dropdown, List } from 'antd'
+import { Card, Row, Col, Dropdown, List, Divider } from 'antd'
 import { Icon } from 'react-fa'
 import Avatar from 'react-avatar'
 import './style.scss'
@@ -67,20 +67,58 @@ class AvatarButton extends React.Component {
         </a>
         {this.state.isMenuVisible && (
           <div className="avatar-btn__menu-container">
-            <List
-              itemLayout="horizontal"
-              dataSource={data}
-              renderItem={item => (
-                <List.Item>
-                  {
-                    <a href="#">
-                      <Icon name={item.icon} className="space-right--15 list-item-icon" />
-                      {item.title}
-                    </a>
-                  }
-                </List.Item>
-              )}
-            />
+            <List>
+              <List.Item>
+                <a href="#">
+                  <Icon name="user" className="space-right--15 list-item-icon" />
+                  My Profile
+                </a>
+              </List.Item>
+              <List.Item>
+                <a href="#">
+                  <Icon name="bell" className="space-right--15 list-item-icon" />
+                  Notifications
+                </a>
+              </List.Item>
+            </List>
+            <Divider />
+            <List>
+              <List.Item>
+                <a href="#">
+                  <Icon name="users" className="space-right--15 list-item-icon" />
+                  Manage Team
+                </a>
+              </List.Item>
+              <List.Item>
+                <a href="#">
+                  <Icon name="wrench" className="space-right--15 list-item-icon" />
+                  Settings
+                </a>
+              </List.Item>
+              <List.Item>
+                <a href="#">
+                  <Icon name="bullhorn" className="space-right--15 list-item-icon" />
+                  What's New
+                </a>
+              </List.Item>
+              <List.Item>
+                <a href="#">
+                  <Icon name="life-ring" className="space-right--15 list-item-icon" />
+                  Support
+                </a>
+              </List.Item>
+            </List>
+            <Divider />
+            <List>
+              <List.Item>
+                {
+                  <a href="#">
+                    <Icon name="sign-out" className="space-right--15 list-item-icon" />
+                    Signout
+                  </a>
+                }
+              </List.Item>
+            </List>
           </div>
         )}
       </div>
