@@ -17,18 +17,18 @@ class MainMenu extends React.Component {
         style={{ ...this.props.style }}
       >
         <Menu.Item key="5">
-          <Icon name="th-list" />
+          <Icon name="th-list" className="list-item-icon" />
           <span className="ant-menu-item__text">&nbsp; All Posts</span>
         </Menu.Item>
         <Menu.Item key="6">
           <span className="ant-menu-item__text">
-            <Icon name="bolt" />
+            <Icon name="bolt" className="list-item-icon" />
             &nbsp; Must See
           </span>
         </Menu.Item>
         <Menu.Item key="7">
           <span className="ant-menu-item__text">
-            <Icon name="edit" />
+            <Icon name="edit" className="list-item-icon" />
             &nbsp; Draft
           </span>
         </Menu.Item>

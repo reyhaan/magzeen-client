@@ -74,7 +74,7 @@ class AvatarButton extends React.Component {
                 <List.Item>
                   {
                     <a href="#">
-                      <Icon name={item.icon} className="space-right--15" />
+                      <Icon name={item.icon} className="space-right--15 list-item-icon" />
                       {item.title}
                     </a>
                   }
