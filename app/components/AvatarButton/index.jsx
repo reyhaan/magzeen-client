@@ -9,12 +9,32 @@ class AvatarButton extends React.Component {
     this.state = {
       isMenuVisible: false,
     }
+
+    this.showMenu = this.showMenu.bind(this)
+    this.closeMenu = this.closeMenu.bind(this)
   }
 
-  toggleMenu = () => {
-    this.setState({
-      isMenuVisible: !this.state.isMenuVisible,
-    })
+  closeMenu = () => {
+    this.setState(
+      {
+        isMenuVisible: false,
+      },
+      () => {
+        document.removeEventListener('click', this.closeMenu)
+      },
+    )
+  }
+
+  showMenu = event => {
+    event.preventDefault()
+    this.setState(
+      {
+        isMenuVisible: !this.state.isMenuVisible,
+      },
+      () => {
+        document.addEventListener('click', this.closeMenu)
+      },
+    )
   }
 
   render() {
@@ -39,13 +59,7 @@ class AvatarButton extends React.Component {
 
     return (
       <div className="avatar-btn">
-        <a
-          className="avatar-btn__user-image"
-          href="#"
-          onClick={() => {
-            this.toggleMenu()
-          }}
-        >
+        <a className="avatar-btn__user-image" href="#" onClick={this.showMenu}>
           <Icon name="user-circle" /> &nbsp; <Icon name="caret-down" />
         </a>
         {this.state.isMenuVisible && (
