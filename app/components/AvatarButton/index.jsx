@@ -1,6 +1,7 @@
 import React from 'react'
-import { Card, Row, Col, Dropdown, List, Avatar } from 'antd'
+import { Card, Row, Col, Dropdown, List } from 'antd'
 import { Icon } from 'react-fa'
+import Avatar from 'react-avatar'
 import './style.scss'
 
 class AvatarButton extends React.Component {
@@ -60,7 +61,9 @@ class AvatarButton extends React.Component {
     return (
       <div className="avatar-btn">
         <a className="avatar-btn__user-image" href="#" onClick={this.showMenu}>
-          <Icon name="user-circle" /> &nbsp; <Icon name="caret-down" />
+          <Avatar name="Rehaan" size={32} round={true} textSizeRatio={2.2} />
+          &nbsp;
+          <Icon name="caret-down" />
         </a>
         {this.state.isMenuVisible && (
           <div className="avatar-btn__menu-container">

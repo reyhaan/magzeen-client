@@ -1,13 +1,14 @@
 @import '../../style/colors.scss';
 
 .avatar-btn {
+  float: right;
+  position: relative;
   .avatar-btn__user-image {
     background: none;
     color: $grey5;
     font-size: 18px;
     border: none;
     text-decoration: none;
-    float: right;
     padding: 0 10px;
     color: $grey7;
 
@@ -27,7 +28,7 @@
     width: 210px;
     padding: 15px 25px;
     height: auto;
-    left: 110px;
+    left: -145px;
     border-radius: 3px;
     top: 50px;
     border: 1px solid #eee;

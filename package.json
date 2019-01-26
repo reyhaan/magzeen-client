@@ -25,6 +25,7 @@
     "parcel-bundler": "1.10.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
+    "react-avatar": "^3.5.0",
     "react-codemirror2": "^5.1.0",
     "react-dom": "^16.7.0",
     "react-fa": "^5.0.0",
