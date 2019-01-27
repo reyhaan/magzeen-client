@@ -13,7 +13,8 @@ class FeedItem extends React.Component {
         <Card className="feed-item__card">
           <Row>Header</Row>
           <Row>body</Row>
-          <Row>footer</Row>
+          <Row>meta</Row>
+          <Row>comments</Row>
         </Card>
       </div>
     )

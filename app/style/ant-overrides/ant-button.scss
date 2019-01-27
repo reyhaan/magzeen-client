@@ -1,10 +1,10 @@
 @import '../colors.scss';
 
 .ant-btn {
-  background-color: $appPrimary;
+  background-color: $btnPrimaryLight;
   border: none;
   border-radius: 20px;
-  color: $appWhite;
+  color: $appPrimary;
   height: 40px;
   padding: 0 20px;
 }
