@@ -42,7 +42,7 @@ class MainMenu extends React.Component {
 
     return (
       <div className="main-menu">
-        <Menu mode="inline" selectedKeys={headerMenuSelection} style={{ ...this.props.style }}>
+        <Menu mode="inline" selectedKeys={headerMenuSelection} {...this.props}>
           <Menu.Item key="header_1" onClick={this.manageSelections}>
             <Icon name="th-list" className="list-item-icon" />
             <span className="ant-menu-item__text">&nbsp; All Posts</span>
@@ -62,7 +62,7 @@ class MainMenu extends React.Component {
           </div>
         </div>
 
-        <Menu mode="inline" style={{ ...this.props.style }} selectedKeys={sectionMenuSelection}>
+        <Menu mode="inline" {...this.props} selectedKeys={sectionMenuSelection}>
           <Menu.Item key="section_1" onClick={this.manageSelections}>
             <span className="ant-menu-item__text space-left--20">&nbsp; Design</span>
           </Menu.Item>
@@ -76,7 +76,7 @@ class MainMenu extends React.Component {
 
         <br />
 
-        <Menu mode="inline" style={{ ...this.props.style }} selectedKeys={footerMenuSelection}>
+        <Menu mode="inline" {...this.props} selectedKeys={footerMenuSelection}>
           <Menu.Item key="footer_1" onClick={this.manageSelections}>
             <span className="ant-menu-item__text space-left--20">&nbsp; Draft</span>
           </Menu.Item>

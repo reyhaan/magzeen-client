@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Popover } from 'antd'
 import Avatar from 'react-avatar'
+import PropTypes from 'prop-types'
 import { Icon } from 'react-fa'
 import './style.scss'
 
@@ -34,7 +35,7 @@ class FeedHeader extends React.Component {
             </div>
           </Col>
           <Col className="feed-header__options">
-            {this.props.options && (
+            {this.props.showOptions && (
               <a>
                 <Icon name="ellipsis-h" size="lg" />
               </a>
@@ -44,6 +45,14 @@ class FeedHeader extends React.Component {
       </div>
     )
   }
+}
+
+FeedHeader.propTypes = {
+  showOptions: PropTypes.bool,
+}
+
+FeedHeader.defaultProps = {
+  showOptions: false,
 }
 
 export default FeedHeader

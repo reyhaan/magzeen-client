@@ -10,19 +10,19 @@ class FeedItem extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      feedOptions: false,
+      isFeedOptionsVisible: false,
     }
   }
 
   handleMouseOver = () => {
     this.setState({
-      feedOptions: true,
+      isFeedOptionsVisible: true,
     })
   }
 
   handleMouseLeave = () => {
     this.setState({
-      feedOptions: false,
+      isFeedOptionsVisible: false,
     })
   }
 
@@ -34,7 +34,7 @@ class FeedItem extends React.Component {
         onMouseLeave={this.handleMouseLeave}
       >
         <Card className="feed-item__card">
-          <FeedHeader options={this.state.feedOptions} />
+          <FeedHeader showOptions={this.state.isFeedOptionsVisible} />
           <FeedBody />
           <FeedActions />
           <FeedComments />
