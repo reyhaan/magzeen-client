@@ -9,13 +9,32 @@ import FeedComments from '../FeedComments'
 class FeedItem extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      feedOptions: false,
+    }
+  }
+
+  handleMouseOver = () => {
+    this.setState({
+      feedOptions: true,
+    })
+  }
+
+  handleMouseLeave = () => {
+    this.setState({
+      feedOptions: false,
+    })
   }
 
   render() {
     return (
-      <div className="feed-item">
+      <div
+        className="feed-item"
+        onMouseOver={this.handleMouseOver}
+        onMouseLeave={this.handleMouseLeave}
+      >
         <Card className="feed-item__card">
-          <FeedHeader options={true} />
+          <FeedHeader options={this.state.feedOptions} />
           <FeedBody />
           <FeedActions />
           <FeedComments />
