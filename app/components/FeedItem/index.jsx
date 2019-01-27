@@ -1,6 +1,10 @@
 import React from 'react'
 import { Card, Row, Col } from 'antd'
 import './style.scss'
+import FeedHeader from '../FeedHeader'
+import FeedBody from '../FeedBody'
+import FeedActions from '../FeedActions'
+import FeedComments from '../FeedComments'
 
 class FeedItem extends React.Component {
   constructor(props) {
@@ -11,10 +15,10 @@ class FeedItem extends React.Component {
     return (
       <div className="feed-item">
         <Card className="feed-item__card">
-          <Row>Header</Row>
-          <Row>body</Row>
-          <Row>meta</Row>
-          <Row>comments</Row>
+          <FeedHeader />
+          <FeedBody />
+          <FeedActions />
+          <FeedComments />
         </Card>
       </div>
     )
