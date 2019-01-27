@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Row, Col, Dropdown, Button, Menu, Input } from 'antd'
+import { Layout, Row, Col, Dropdown, Button, Menu, Input, Badge } from 'antd'
 import { Icon } from 'react-fa'
 import logo from '../../assets/logo.png'
 import './style.scss'
@@ -30,7 +30,9 @@ class GlobalHeader extends React.Component {
           <Col span={8} className="global-header__right">
             <AvatarButton />
             <div className="global-header__right__notification-btn">
-              <Icon name="bell" />
+              <Badge dot={true}>
+                <Icon name="bell" />
+              </Badge>
             </div>
           </Col>
         </Row>

@@ -26,6 +26,10 @@
   .global-header__right {
     text-align: right;
 
+    .ant-badge-dot {
+      background-color: $appGreen;
+    }
+
     .global-header__right__notification-btn {
       float: right;
       padding: 0 20px;

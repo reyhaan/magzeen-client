@@ -11,6 +11,14 @@ class Feed extends React.Component {
     return (
       <div>
         <FeedItem />
+        <FeedItem />
+        <FeedItem />
+        <FeedItem />
+        <FeedItem />
+        <FeedItem />
+        <FeedItem />
+        <FeedItem />
+        <FeedItem />
       </div>
     )
   }

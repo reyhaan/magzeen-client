@@ -58,10 +58,14 @@ li.ant-menu-item {
 
   .ant-menu-item__text {
     font-size: 14px;
+    font-family: 'avenir-light';
   }
 }
 
 li.ant-menu-item-selected {
+  .ant-menu-item__text {
+    font-family: 'avenir-regular';
+  }
   span {
     color: $appPrimary;
 

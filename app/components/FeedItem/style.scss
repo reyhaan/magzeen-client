@@ -1,8 +1,9 @@
-.ant-card.feed-item {
-  &__card {
+.feed-item {
+  max-width: 720px;
+  .feed-item__card {
     width: 100%;
     border-radius: 5px;
-    margin: 20px;
+    margin-bottom: 15px;
     margin-top: 0;
     margin-left: 0;
     float: left;
