@@ -27,7 +27,7 @@ class FeedHeader extends React.Component {
             <div className="feed-header__meta__details">2 days ago</div>
             <div className="separator" />
             <div className="feed-header__meta__details viewer-btn">
-              <Popover content={content} placement="bottom">
+              <Popover content={content} placement="bottomLeft">
                 <Icon name="user" />
                 &nbsp; 5 Viewers
               </Popover>
