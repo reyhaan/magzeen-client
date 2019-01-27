@@ -15,7 +15,7 @@ class FeedItem extends React.Component {
     return (
       <div className="feed-item">
         <Card className="feed-item__card">
-          <FeedHeader />
+          <FeedHeader options={true} />
           <FeedBody />
           <FeedActions />
           <FeedComments />

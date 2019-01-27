@@ -1,5 +1,16 @@
+@import '../../style/colors.scss';
+
 .feed-header {
   padding-bottom: 20px;
+
+  .separator {
+    width: 3px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #c4c6c9;
+    margin: 6px 8px 0;
+    float: left;
+  }
 
   &__avatar-container {
     width: 55px;
@@ -8,9 +19,32 @@
 
   &__meta {
     overflow: hidden;
+
+    &__details {
+      font-size: 11px;
+      color: $grey10;
+      float: left;
+
+      &.viewer-btn {
+        &:hover {
+          color: $grey7;
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   &__options {
     width: 95px;
+    float: right;
+    text-align: right;
+
+    a {
+      color: $grey9;
+    }
+
+    span {
+      padding: 0 10px;
+    }
   }
 }

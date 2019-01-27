@@ -48,6 +48,10 @@
 a {
   color: $appPrimary;
   text-decoration: none;
+
+  &:hover {
+    color: $appPrimary;
+  }
 }
 
 .space-left--5 {
