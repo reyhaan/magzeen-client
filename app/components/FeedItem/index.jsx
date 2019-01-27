@@ -26,7 +26,10 @@ class FeedItem extends React.Component {
     })
   }
 
+  handleToggleMore = () => {}
+
   render() {
+    const { isCommentsVisible } = this.state
     return (
       <div
         className="feed-item"
@@ -36,8 +39,8 @@ class FeedItem extends React.Component {
         <Card className="feed-item__card">
           <FeedHeader showOptions={this.state.isFeedOptionsVisible} />
           <FeedBody />
-          <FeedActions />
-          <FeedComments />
+          <FeedActions onToggleMore={this.handleToggleMore} />
+          <FeedComments isVisible={isCommentsVisible} />
         </Card>
       </div>
     )
