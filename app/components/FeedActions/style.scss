@@ -1,0 +1,15 @@
+.feed-actions {
+  padding: 0 10px 0 5px;
+
+  &__comment {
+    float: left;
+  }
+
+  &__reaction {
+    float: left;
+  }
+
+  &__more {
+    float: right;
+  }
+}

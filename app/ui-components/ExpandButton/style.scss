@@ -1,0 +1,15 @@
+@import '../../style/colors.scss';
+
+.expand-button {
+  height: 20px;
+  width: 100%;
+  cursor: pointer;
+
+  &.expanded {
+    color: $grey8;
+  }
+
+  &.collapsed {
+    color: $appGreen;
+  }
+}
