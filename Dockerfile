@@ -6,7 +6,6 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY . /app
-COPY ./package.json /package.json
 
 RUN npm install --silent
 
