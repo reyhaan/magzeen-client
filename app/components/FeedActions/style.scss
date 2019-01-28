@@ -1,6 +1,10 @@
 .feed-actions {
   padding: 0 10px 0 5px;
 
+  &__row {
+    line-height: 25px;
+  }
+
   &__comment {
     float: left;
   }

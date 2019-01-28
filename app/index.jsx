@@ -10,6 +10,14 @@ import 'antd/dist/antd.css'
 import './style/override.scss'
 import './style/app.scss'
 
+// Add fontawesome to the app
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas, far, fab)
+
 // Charting library
 // import 'nvd3/build/nv.d3.css'
 

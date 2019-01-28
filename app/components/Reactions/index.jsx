@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Row } from 'antd'
-import EmojiReact from 'react-emoji-react'
+import ReactEmoji from '../../ui-components/ReactEmoji'
 import './style.scss'
 
 class Reactions extends React.Component {
@@ -31,8 +31,8 @@ class Reactions extends React.Component {
 
   render() {
     return (
-      <div className="feed-body">
-        <EmojiReact
+      <div className="reactions-container space-left--15">
+        <ReactEmoji
           reactions={this.state.emojis}
           onReaction={name => this.onReaction(name)}
           onEmojiClick={name => this.onEmojiClick(name)}

@@ -1,0 +1,12 @@
+@import '../../style/colors.scss';
+
+.add-comment-button {
+  color: $grey10;
+  font-size: 12px;
+
+  &__icon {
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: 'avenir-light';
+  }
+}

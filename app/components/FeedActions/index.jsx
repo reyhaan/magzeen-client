@@ -3,7 +3,7 @@ import { Card, Row, Col } from 'antd'
 import PropTypes from 'prop-types'
 import './style.scss'
 import ExpandButton from '../../ui-components/ExpandButton'
-import CommentButton from '../CommentButton'
+import AddCommentButton from '../AddCommentButton'
 import Reactions from '../Reactions'
 
 class FeedActions extends React.Component {
@@ -24,7 +24,7 @@ class FeedActions extends React.Component {
       <div className="feed-actions">
         <Row className="feed-actions__row">
           <div className="feed-actions__comment">
-            <CommentButton onClick={this.handleToggleComment} />
+            <AddCommentButton onClick={this.handleToggleComment} />
           </div>
           <div className="feed-actions__reaction">
             <Reactions />
