@@ -24,7 +24,7 @@ class FeedHeader extends React.Component {
             <Avatar name="Mohammad Rehaan" size="40" round={true} />
           </Col>
           <Col className="feed-header__meta" span={18}>
-            <div className="group">Mohammad Rehaan in Design</div>
+            <div>Mohammad Rehaan in Design</div>
             <div className="feed-header__meta__details">2 days ago</div>
             <div className="separator" />
             <div className="feed-header__meta__details viewer-btn">

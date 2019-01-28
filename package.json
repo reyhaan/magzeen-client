@@ -20,6 +20,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "antd": "^3.10.9",
     "axios": "^0.18.0",
+    "emoji-mart": "^2.9.2",
     "get-emoji": "^2.0.0",
     "json-string-formatter": "^1.0.1",
     "mobx": "^5.8.0",

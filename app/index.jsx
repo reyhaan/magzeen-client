@@ -9,6 +9,7 @@ import { stores } from './stores'
 import 'antd/dist/antd.css'
 import './style/override.scss'
 import './style/app.scss'
+import 'emoji-mart/css/emoji-mart.css'
 
 // Add fontawesome to the app
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,14 +18,6 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fas, far, fab)
-
-// Charting library
-// import 'nvd3/build/nv.d3.css'
-
-// Blueprint UI kit
-// import 'normalize.css/normalize.css'
-// import '@blueprintjs/icons/lib/css/blueprint-icons.css'
-// import '@blueprintjs/core/lib/css/blueprint.css'
 
 class Index extends React.Component {
   render() {

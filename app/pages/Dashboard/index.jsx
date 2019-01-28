@@ -31,13 +31,13 @@ class Dashboard extends React.Component {
     return (
       <Layout className="dashboard">
         <GlobalHeader />
-        <Content className="dashboard__content group">
+        <Content className="dashboard__content">
           <Layout className="dashboard__content__container group">
             <Sider className="dashboard__content__container__sider" width={200}>
               <MainMenu />
             </Sider>
             <Content
-              className="dashboard__content__container__main group"
+              className="dashboard__content__container__main"
               style={{ minHeight: this.state.windowHeight - 74, backgroundColor: 'transparent' }}
             >
               <PageHeader />
