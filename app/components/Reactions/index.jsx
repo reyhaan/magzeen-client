@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { Card, Row } from 'antd'
 import { Picker, Emoji } from 'emoji-mart'
 import Icon from 'react-fa'
@@ -11,9 +12,14 @@ class Reactions extends React.Component {
     this.state = {
       showPicker: false,
     }
+    this.hidePicker = this.hidePicker.bind(this)
+    this.showPicker = this.showPicker.bind(this)
   }
 
-  hidePicker = () => {
+  hidePicker = e => {
+    if (ReactDOM.findDOMNode(this).contains(e.target)) {
+      return
+    }
     this.setState(
       {
         showPicker: false,
