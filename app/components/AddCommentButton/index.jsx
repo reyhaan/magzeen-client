@@ -48,7 +48,7 @@ class AddCommentButton extends React.Component {
             />
           </span>
         </Tooltip>
-        <span className="add-comment-button__text">2 comments</span>
+        <span className="add-comment-button__text">14 comments</span>
       </div>
     )
   }

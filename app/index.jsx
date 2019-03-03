@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import App from './pages/App'
 import { Provider } from 'mobx-react'
 import { stores } from './stores'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 // add all required css libraries here at the root
 import 'antd/dist/antd.css'
@@ -24,7 +26,12 @@ class Index extends React.Component {
     return (
       <Router>
         <Provider stores={stores}>
-          <App />
+          <Switch>
+            <Route path="/signup" component={Signup} />
+            <Route path="/login" component={Login} />
+            <Route path="/app" component={App} />
+            <Route exact path="/" component={App} />
+          </Switch>
         </Provider>
       </Router>
     )
